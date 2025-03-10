@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <section class="landing-page">
+        <div class="wrapper">
+            <div class="flex-content">
+                <h1 class="vacation-heading">Welcome To Master Quiz</h1>
+                <a href="#quiz-packages" class="btn">Start Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Header Section -->
+    <header class="quiz-header" id="quiz-header">
+        <h1 class="heading">Master Quiz</h1>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="#quiz-packages">Quiz</a>
+        <a href="#Perfomer">Top Performers</a>
+        <a href="#notes">Notes</a>
+        <span id="auth-buttons">
+            <!-- Authentication buttons dynamically updated via JS -->
+        </span>
+    </nav>
+
+    <!-- Quiz Packages -->
+    <section class="quiz-packages-section" id="quiz-packages">
+        <h1 class="quiz-heading">Coding Quiz</h1>
+        <p class="quiz-text">
+            Test your programming skills with our coding quizzes in Java, Python, JavaScript, and .NET!
+        </p>
+        <div class="package-wrapper">
+            <div class="package-card">
+                <img src="images/java.png" alt="Java">
+                <p class="card-heading">Java</p>
+                <p class="card-text">Test your Java programming knowledge with exciting quizzes.</p>
+                <button class="btn" onclick="startQuiz('java')">Take Quiz</button>
+            </div>
+            <div class="package-card">
+                <img src="images/python.jpg" alt="Python">
+                <p class="card-heading">Python</p>
+                <p class="card-text">Challenge yourself with Python quizzes covering all topics.</p>
+                <button class="btn" onclick="startQuiz('python')">Take Quiz</button>
+            </div>
+            <div class="package-card">
+                <img src="images/js.png" alt="JavaScript">
+                <p class="card-heading">JavaScript</p>
+                <p class="card-text">Improve your JavaScript skills by attempting our quizzes.</p>
+                <button class="btn" onclick="startQuiz('javascript')">Take Quiz</button>
+            </div>
+            <div class="package-card">
+                <img src="images/net.png" alt=".Net">
+                <p class="card-heading">.Net</p>
+                <p class="card-text">Test your .Net framework skills with our quizzes and more.</p>
+                <button class="btn" onclick="startQuiz('dotnet')">Take Quiz</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Performers -->
+    <section class="Perfomer-quiz-section" id="Perfomer">
+        <h1 class="quiz-heading">Top Performers</h1>
+        <p class="quiz-text">Our top performers are experts who have consistently excelled in quizzes across various programming languages.</p>
+        <div class="image-card">
+            <img src="images/m1.jpg" alt="Top Performer 1">
+            <img src="images/m2.jpg" alt="Top Performer 2">
+            <img src="images/m3.jpg" alt="Top Performer 3">
+            <img src="images/m4.jpg" alt="Top Performer 4">
+            <img src="images/m5.jpg" alt="Top Performer 5">
+            <img src="images/m6.jpg" alt="Top Performer 6">
+        </div>
+    </section>
+
+    <!-- Subject Notes -->
+    <section class="notes-section" id="notes">
+        <h1 class="quiz-heading">Subject Notes</h1>
+        <p class="quiz-text">Get access to important study materials for Java, Python, and other programming languages.</p>
+        <div class="notes-div">
+            <div class="notes-wrapper"><img src="images/java.jpg" alt="Java Notes"></div>
+            <div class="notes-wrapper"><img src="images/compiler.png" alt="Compiler Notes"></div>
+            <div class="notes-wrapper"><img src="images/spring.png" alt="Spring Notes"></div>
+            <div class="notes-wrapper"><img src="images/react.png" alt="React Notes"></div>
+            <div class="notes-wrapper"><img src="images/dev.jpg" alt="Dev Notes"></div>
+            <div class="notes-wrapper"><img src="images/python.jpg" alt="Python Notes"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <small>All Rights Reserved</small>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
